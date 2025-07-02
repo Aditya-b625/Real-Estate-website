@@ -1,0 +1,31 @@
+.price{
+    background-color: #dff6f9;
+}
+
+.property{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.property:hover {
+    transform: translateY(-5px);
+    box-shadow: 10 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bookmark-icon {
+    position: absolute;
+    top: 10px !important;
+    right: 15px !important;
+    font-size: 1.2rem !important;
+    color: #aaa;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .bookmark-icon.bookmarked {
+    color: red;
+  }
+  
+  .bookmark-icon:hover {
+    color: red;
+  }

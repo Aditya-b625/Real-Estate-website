@@ -1,0 +1,434 @@
+/* General resets and container */
+.hero-section {
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 800px;
+    width: 100%;
+    background-image: url('/public/images/LuxuryRealEstateBranding.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px) brightness(0.8);
+    z-index: -1;
+  }
+  
+  /* Headings in hero */
+  .container-fluid.homesection h1 {
+    padding-left: 60px;
+    padding-bottom: 2px;
+    font-size: 50px !important;
+    font-weight: 100 !important;
+    color: white !important;
+    text-shadow: 2px 3px 10px #000000a1;
+    text-align: center;
+  }
+  
+  .hero-section h2 {
+    padding-left: 70px;
+    padding-bottom: 10px;
+    font-size: 35px !important;
+    background: linear-gradient(to right, #ffaf00, #f5d300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+  }
+  
+  /* Search Filter */
+  #search-filter {
+    display: flex;
+    gap: 15px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 50px;
+  }
+  
+  #search-filter select {
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  /* Fix for small column width */
+  .col-md-1 {
+    margin-left: 0px !important;
+    width: 2% !important;
+  }
+  
+  /* Search button */
+  .search-btn {
+    background-color: rgb(0, 60, 255);
+    color: white;
+    padding: 7px 12px;
+    margin-left: 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-btn:hover {
+    background-color: rgb(0, 45, 200);
+  }
+  
+  /* Scroll container wrapper */
+  .scroll-container-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  /* Horizontal scroll container */
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    gap: 15px;
+  }
+  
+  /* Hide default scrollbar (webkit) */
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar (Firefox) */
+  .scroll-container {
+    scrollbar-width: none;
+  }
+  
+  /* Property cards */
+  .property-card1 {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 15px;
+  }
+  
+  .property-card1 .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .property-card1 .card-title {
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+  }
+  
+  /* Image zoom on hover */
+  .property-card1:hover .search-img img {
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  /* Card shadow on hover */
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-img {
+    overflow: hidden;
+  }
+  
+  /* Scroll buttons */
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0px 8px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-btn:hover {
+    opacity: 1;
+  }
+  
+  .scroll-btn.left {
+    left: 10px;
+  }
+  
+  .scroll-btn.right {
+    right: 10px;
+  }
+  
+  /* Container max width */
+  .container-fluid.homesection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Post Container */
+  .post-container {
+    background-color: #fffbf3 !important;
+    border-radius: 15px;
+    padding: 30px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+  }
+  
+  .post-container:hover {
+    transform: scale(1.02);
+  } 
+  
+  /* Services Section */
+  .explore-wrapper {
+    margin: 10px 100px;
+    max-width: 90%;
+  }
+  
+  .services {
+    background: linear-gradient(90deg, #F7F1E7 50%, rgba(247, 241, 231, 0) 70.9%), url('/public/images/sofa.jpg');
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 150px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.07);
+  }
+  
+  /* Services cards */
+  .explore-wrapper .card {
+    margin-right: 130px;
+    border: none;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    background: white;
+  }
+  
+  .explore-wrapper .d-flex {
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .explore-wrapper img {
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .explore-wrapper h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  /* Cities Section */
+  .city-card {
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 12px;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.07);
+    transition: transform 0.3s ease;
+  }
+  
+  .city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+  }
+  
+  .city-card img {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .container-fluid.homesection h1 {
+      font-size: 40px !important;
+      padding-left: 30px;
+    }
+  
+    .hero-section h2 {
+      font-size: 28px !important;
+      padding-left: 30px;
+    }
+  
+    #search-filter {
+      padding-left: 30px;
+      padding-right: 30px;
+      gap: 10px;
+    }
+  
+    .explore-wrapper {
+      margin: 10px 50px;
+    }
+  
+    .explore-wrapper .card {
+      margin-right: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      min-height: 500px;
+    }
+  
+    .container-fluid.homesection h1 {
+      font-size: 30px !important;
+      padding-left: 15px;
+    }
+  
+    .hero-section h2 {
+      font-size: 22px !important;
+      padding-left: 15px;
+    }
+  
+    #search-filter {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    #search-filter select {
+      width: 100%;
+    }
+  
+    .scroll-btn {
+      padding: 0 6px;
+      font-size: 20px;
+    }
+  
+    .property-card1 {
+      width: 200px;
+    }
+  
+    .post-container {
+      padding: 25px 20px;
+      max-width: 95%;
+    }
+  
+    .services {
+      height: auto;
+      margin-bottom: 80px;
+      padding: 30px 20px;
+    }
+  
+    .explore-wrapper {
+      margin: 10px 20px;
+    }
+  
+    .explore-wrapper .card {
+      margin-right: 0;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  
+    .explore-wrapper img {
+      width: 60px !important;
+      height: 50px !important;
+    }
+  
+    .explore-wrapper h2 {
+      font-size: 1.6rem;
+    }
+  
+    .city-card img {
+      width: 60px !important;
+      height: 60px !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #search-filter {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    #search-filter select {
+      font-size: 14px;
+    }
+  
+    .property-card1 {
+      width: 180px;
+    }
+  
+    .post-container {
+      padding: 20px 15px;
+    }
+  
+    .explore-wrapper .d-flex {
+      flex-direction: row !important;
+      gap: 10px;
+    }
+  
+    .explore-wrapper h6 {
+      font-size: 1rem;
+    }
+  
+    .explore-wrapper p {
+      font-size: 0.9rem;
+    }
+  
+    .city-card {
+      padding: 8px 10px;
+    }
+  
+    .city-card .d-flex {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .city-card img {
+      width: 50px !important;
+      height: 40px !important;
+    }
+  
+    .arrow-card {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .arrow-card i {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Button focus */
+  button:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 60, 255, 0.4);
+  }
+  
+  /* Text shadows and colors */
+  .text-white {
+    text-shadow: 2px 3px 10px #000000a1;
+  }
+  

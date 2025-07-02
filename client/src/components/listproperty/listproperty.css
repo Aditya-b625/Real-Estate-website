@@ -1,0 +1,32 @@
+/* Adds a subtle elevation and soft corners on bigger screens */
+@media (min-width: 576px) {
+    .property-form-box {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 10 8px 20px rgba(0,0,0,0.8);
+    }
+  }
+
+  .list-property{
+    background-image: url('/public/images/estate5.jpg'); /* Place your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 1300px;
+    width: 100%;
+  }
+  
+  .form-section-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #343a40;
+    margin-top: 30px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 5px;
+  }
+
+  .property-form-box .form-label {
+    font-weight: 500;
+    color: #212529;
+  }

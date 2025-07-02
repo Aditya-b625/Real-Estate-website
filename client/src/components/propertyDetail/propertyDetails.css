@@ -1,0 +1,53 @@
+.property-feature-icon {
+    /* font-size: 1.2rem; */
+    color: #555;
+  }
+
+  /* .text-primary {
+    text-decoration: underline;
+    cursor: pointer;
+  } */
+  .bookmark-icon.bookmarked {
+    color: red;
+    font-size: 1.6rem;
+    top:0%;
+    right:0%;
+  }
+
+  .bookmark-icon.unbookmark {
+    font-size: 1.6rem;
+    top:0%;
+    right:0%;
+  }
+  
+  .bookmark-icon:hover {
+    color: red;
+  }
+
+  /* Style the previous and next arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  color: #333; /* Dark color for arrows */
+  font-size: 30px; /* Increase size if needed */
+  width: 5%; /* Adjust the size of the arrows */
+}
+
+/* Optional: Change the background color of the arrow buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333; /* Dark background for arrow icon */
+  border-radius: 50%; /* Optional: Make it circular */
+  width: 40px; /* Adjust size */
+  height: 40px; /* Adjust size */
+}
+
+/* On hover: Make the arrows a little brighter */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #000; /* Darker color on hover */
+}
+
+/* If you want to change the border or background color for the entire carousel */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.1); /* Optional: Light background */
+}
