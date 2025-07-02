@@ -75,7 +75,7 @@ function Myprofile(){
         <div className="card shadow h-100" style={{boxShadow: 'rgb(219, 219, 219) 0px 3px 15px'}}>
         <div className='listingimage' style={{height:'220px'}}>
           <img
-            src={`http://localhost:5000${p.propertyImages[0]}`}
+            src={`https://real-estate-backend-q59x.onrender.com${p.propertyImages[0]}`}
             alt={p.title}
             className="card-img-top"
             style={{ height: "220px", objectFit: "cover" }}
@@ -90,7 +90,7 @@ function Myprofile(){
               />
               :
               <img
-                src={p?.currentOwner?.profileImage ? `http://localhost:5000${p.currentOwner.profileImage}` : '/images/profile-photo.jpg'}
+                src={p?.currentOwner?.profileImage ? `https://real-estate-backend-q59x.onrender.com${p.currentOwner.profileImage}` : '/images/profile-photo.jpg'}
                 alt="owner"
                 className="rounded-circle"
                 style={{
@@ -158,7 +158,7 @@ function Myprofile(){
         <div className="row justify-content-center text-center">
           <div className="col-md-2 ps-3 mt-3">
            {user.profileImage?<img
-              src={`http://localhost:5000${user.profileImage}`}
+              src={`https://real-estate-backend-q59x.onrender.com${user.profileImage}`}
               className="img-fluid rounded-circle mb-3"
               alt="Profile"
               style={{ width: '120px', height: '120px', objectFit: 'cover', border: '2px solid green' }}

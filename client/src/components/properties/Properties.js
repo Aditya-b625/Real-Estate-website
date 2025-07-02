@@ -101,7 +101,7 @@ function Properties(){
                 {/* Image */}
                 <div className="col-md-3 text-center p-3">
                   <img
-                    src={`http://localhost:5000${prop.propertyImages[0]}`}
+                    src={`https://real-estate-backend-q59x.onrender.com${prop.propertyImages[0]}`}
                     alt="property"
                     className="img-fluid rounded"
                     style={{ height: '180px', objectFit: 'cover', width: '100%' }}

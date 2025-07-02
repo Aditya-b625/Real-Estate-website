@@ -43,7 +43,7 @@ function Viewbookmarked(){
   if (loading) return <div className="text-center my-5">Loading...</div>;
 
   const imageSrc = property.currentOwner.profileImage
-  ? `http://localhost:5000${property.currentOwner.profileImage}`
+  ? `https://real-estate-backend-q59x.onrender.com${property.currentOwner.profileImage}`
   : '/images/profile-photo.jpg';
 
     return (
@@ -82,7 +82,7 @@ function Viewbookmarked(){
                     {property.propertyImages.map((imgPath, idx) => (
                       <Carousel.Item key={idx}>
                         <img
-                          src={`http://localhost:5000${imgPath}`}
+                          src={`https://real-estate-backend-q59x.onrender.com${imgPath}`}
                           className="d-block w-100 rounded"
                           style={{ height: '350px', objectFit: 'cover', border:'1px solid grey' }}
                           alt={`Property Image ${idx + 1}`}

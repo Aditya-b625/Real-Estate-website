@@ -195,7 +195,7 @@ function Home() {
                     <div className="property-card1" key={property._id}>
                       <div className="ms-3 card h-100">
                         <div className='search-img' style={{ height: '170px' }}>
-                          <img src={`http://localhost:5000${property.propertyImages[0]}`} style={{ height: '170px' }} className="card-img-top" alt="..." />
+                          <img src={`https://real-estate-backend-q59x.onrender.com${property.propertyImages[0]}`} style={{ height: '170px' }} className="card-img-top" alt="..." />
                         </div>
                         <div className="card-body">
                           <h6 className="card-title">{property.title}</h6>

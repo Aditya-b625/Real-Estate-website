@@ -110,7 +110,7 @@ function Propertydetails(){
                     {property.propertyImages.map((imgPath, idx) => (
                       <Carousel.Item key={idx}>
                         <img
-                          src={`http://localhost:5000${imgPath}`}
+                          src={`https://real-estate-backend-q59x.onrender.com${imgPath}`}
                           className="d-block w-100 rounded"
                           style={{ height: '350px', objectFit: 'cover',border:'1px solid grey'}}
                           alt={`Property Image ${idx + 1}`}
@@ -214,7 +214,7 @@ function Propertydetails(){
             </div> */}
                 <p><strong className='me-2 ms-5'>Owner:</strong>{property.currentOwner.name}
                   {property.currentOwner?.profileImage ? <img
-                    src={`http://localhost:5000${property.currentOwner.profileImage}`}
+                    src={`https://real-estate-backend-q59x.onrender.com${property.currentOwner.profileImage}`}
                     alt="owner"
                     className="ms-2 me-2 rounded-circle"
                     style={{ width: "40px", height: "40px", objectFit: "cover", border: "2px solid green" }}
