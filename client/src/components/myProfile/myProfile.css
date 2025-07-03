@@ -55,9 +55,10 @@
   color: #fff;
 }
 
-.welcome-message h2 {
+.welcome-message p {
   font-size: 28px;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-weight: 400;
   color: #ffffff;
 }
 

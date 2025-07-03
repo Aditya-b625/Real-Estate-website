@@ -14,7 +14,7 @@ export const myProfile = ()=> axiosInstance.get('/user/me');
 
 export const updateUser = (id,formData)=> axiosInstance.put(`/user/${id}`,formData,{
     headers: {
-      'Content-Type': 'multipart/form-data', // This is crucial
+      'Content-Type': 'multipart/form-data',
     },
   });
 
@@ -28,7 +28,7 @@ export const bookmarkedProperties = ()=> axiosInstance.get('/property/bookmarked
 
 export const createProperty = (data)=> axiosInstance.post('/property/create', data, {
     headers: {
-      'Content-Type': 'multipart/form-data', // This is crucial
+      'Content-Type': 'multipart/form-data',
     },
   }); 
 

@@ -76,7 +76,7 @@ function Register(){
       const user = result.user;
       const idToken = await user.getIdToken();
 
-      const res = await fetch("http://localhost:5000/auth/user/google-login", {
+      const res = await fetch("https://real-estate-backend-q59x.onrender.com/auth/user/google-login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ token: idToken }),

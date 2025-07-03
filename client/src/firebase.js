@@ -1,7 +1,7 @@
 // src/firebase.js
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth"; // ✅ Needed for login
-import { getFirestore } from "firebase/firestore"; // ✅ If you're using Firestore
+import { getAuth } from "firebase/auth"; // Needed for login
+import { getFirestore } from "firebase/firestore"; // If using Firestore
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -13,12 +13,11 @@ const firebaseConfig = {
     appId: "1:606915503329:web:73e32062a7ac3eb11883a0",
     measurementId: "G-LZ7TMCRST2"
   };
-  
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// ✅ These are important for sign-in and DB
+//These are important for sign-in and DB
 const auth = getAuth(app);
 const db = getFirestore(app);
 const analytics = getAnalytics(app);

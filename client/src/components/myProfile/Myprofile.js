@@ -144,9 +144,9 @@ function Myprofile(){
         <section style={{backgroundColor: '#f8f9fa', height: '100vh'}}>
          <div className="container py-5 bg-lite">
             <div className="welcome-message">
-              <h4 className="fw-bold text-left mb-1">
+              <p className=" text-left mb-1">
                 Welcome back, <span className="">{user?.name.split(' ')[0]}</span> !
-              </h4>
+              </p>
             </div>
           <div className='p-3 bg-white rounded-4' style={{boxShadow: 'rgb(219, 219, 219) 0px 3px 15px'}}>
               {loadingUser && (
