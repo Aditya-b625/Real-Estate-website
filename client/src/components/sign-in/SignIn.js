@@ -2,7 +2,6 @@ import React,{ useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import { login } from '../../apiRoute';
-import Home from '../home/Home';
 import {toast} from "react-toastify";
 import './signin.css';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";

@@ -20,12 +20,12 @@ axiosInstance.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Optional: Handle token expiry or auth errors globally
+//Handle token expiry or auth errors globally
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      // Optionally logout or redirect to login
+      //logout or redirect to login
       console.warn('Unauthorized - redirecting to login');
       window.location.href = '/signin';
     }

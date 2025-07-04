@@ -30,6 +30,6 @@ app.use('/auth',authRouter);
 app.use('/user',userRouter);
 app.use('/property',propertyRouter);
 
-app.listen(process.env.PORT,'0.0.0.0', () => {
+app.listen(process.env.PORT,() => {
   console.log(`Server is started at... http://localhost:${process.env.PORT}`);
 });
