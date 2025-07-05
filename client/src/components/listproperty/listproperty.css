@@ -30,3 +30,64 @@
     font-weight: 500;
     color: #212529;
   }
+
+  /* new */
+  @media (max-width: 576px) {
+    .list-property {
+      height: 100%; /* Adjust height on small screens */
+      background-attachment: scroll; /* Disable fixed background for mobile */
+      padding: 10px;
+    }
+  
+    /* Adjust Form Box for mobile */
+    .property-form-box {
+      padding: 1rem;
+      box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.6);
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+    }
+  
+    /* Full width form fields on mobile */
+    input[type="text"], input[type="number"], select, textarea {
+      width: 100%;
+    }
+  
+    /* Full width form sections on mobile */
+    .col-md-6, .col-md-4 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .col-12 {
+      padding: 10px;
+    }
+  
+    /* Form Section Title */
+    .form-section-title {
+      font-size: 16px; /* Smaller titles for mobile */
+      margin-top: 20px;
+    }
+  
+    /* Image preview on mobile */
+    .d-flex img {
+      width: 60px;
+      height: 50px;
+      object-fit: cover;
+    }
+  
+    /* Adjust font sizes for mobile */
+    .form-label {
+      font-size: 14px; /* Smaller font size for labels */
+    }
+  }
+  
+  /* For medium screens (Tablets) */
+  @media (max-width: 768px) {
+    .col-md-6, .col-md-4 {
+      width: 100%;
+    }
+  
+    .form-section-title {
+      font-size: 16px;
+    }
+  }

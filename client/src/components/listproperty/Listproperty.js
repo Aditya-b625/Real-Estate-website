@@ -219,7 +219,7 @@ function Listproperty(){
                     {/* --- Section: Location & Image --- */}
                     <h5 className="form-section-title">📍 Location & Image</h5>
 
-                    <div className="col-md-5 me-5">
+                    <div className="col-md-5" style={{"margin-right":'70px'}}>
                       <label className="form-label">Location</label>
                       <select className="form-select" name="location" required onChange={handleChange}>
                         <option value="">Choose...</option>
@@ -236,7 +236,7 @@ function Listproperty(){
                       </select>
                     </div>
 
-                    <div className="col-md-6 ms-4">
+                    <div className="col-md-6" >
                       <label className="form-label ms-1">Upload Property Image (max 5)</label>
                       <input type="file" name="propertyImages"  accept="image/*" multiple  className="form-control" required onChange={handleChange} />
                       {formData.propertyImages.length > 0 && (
