@@ -17,6 +17,7 @@ import Viewmore from './components/viewMore/Viewmore';
 import Viewbookmarked from './components/viewBookmarked/Viewbookmarked';
 import Updateproperty from './components/updateProperty/Updateproperty';
 import Header from './components/header/Header.js';
+import ProtectedRoute from './components/ProtectedRoute';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -33,21 +34,26 @@ function App() {
 
      <div style={{paddingTop: showHeader? "68px":"0px"}}>
      <Routes>
+      {/* Public routes */}
          <Route path='/' element={<Home />}></Route>
          <Route path='/about' element={<About/>}></Route>
          <Route path='/properties' element={<Properties/>}></Route>
          <Route path='/contact' element={<Contact/>}></Route>
          <Route path='/signin' element={<SignIn/>}></Route>
          <Route path='/register' element={<Register/>}></Route>
+         <Route path='/property/:id' element={<Propertydetails/>}></Route>
          <Route path='/verify' element={<OtpVerify/>}></Route>
          <Route path='/forgetpassword' element={<Forgetpassword/>}></Route>
          <Route path='/resetpasswordotp' element={<Forgetotp/>}></Route>
-         <Route path='/myprofile' element={<Myprofile/>}></Route>
-         <Route path='/property/:id' element={<Propertydetails/>}></Route>
          <Route path='/list-property' element={<Listproperty/>}></Route>
-         <Route path='/view-more/:id' element={<Viewmore/>}></Route>
-         <Route path='/view-bookmarked/:id' element={<Viewbookmarked/>}></Route>
-         <Route path='/update-property/:id' element={<Updateproperty/>}></Route>
+
+      {/* Protected routes */}
+         <Route element={<ProtectedRoute />}>
+            <Route path='/myprofile' element={<Myprofile/>}></Route>
+            <Route path='/view-more/:id' element={<Viewmore/>}></Route>
+            <Route path='/view-bookmarked/:id' element={<Viewbookmarked/>}></Route>
+            <Route path='/update-property/:id' element={<Updateproperty/>}></Route>
+        </Route>
      </Routes>
      <ToastContainer position="top-right" autoClose={2000} theme='colored'/>
      </div>
