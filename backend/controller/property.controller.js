@@ -119,11 +119,16 @@ const transporter = nodemailer.createTransport({
       user: process.env.Gmail,
       pass: process.env.Password    
     },
+    secure: true,
+    tls: {
+    rejectUnauthorized: false
+    },
+    // connectionTimeout: 10000,
   });
 
 export const contactOwner = TryCatch(async(req, res) => {
     const { ownerEmail, propertyTitle, message } = req.body;
-    const user = req.user; // 👈 from token
+    const user = req.user; // from token
   
     if (!ownerEmail || !message || !propertyTitle) {
       return res.status(400).json({ error: 'Missing fields'});

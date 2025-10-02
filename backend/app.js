@@ -9,7 +9,10 @@ import propertyRouter from './routes/property.route.js';
 
 const app = express();
 app.use(cors({
-  origin: 'https://real-estate-website-qwrv.onrender.com',
+  origin: [
+    'https://real-estate-website-qwrv.onrender.com', 
+    'http://localhost:3000',
+  ],
   credentials: true,               // allow credentials like cookies or auth headers
 }));
 
