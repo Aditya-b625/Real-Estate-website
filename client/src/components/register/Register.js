@@ -62,6 +62,7 @@ function Register(){
         navigate("/verify");
       }, 2000);
     } catch (error) {
+      console.log(error);
       toast.error(error.response?.data?.message || "Registration failed");
     }finally {
       setLoading(false);
